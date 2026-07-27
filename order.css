@@ -1,0 +1,135 @@
+.order-section{
+padding:80px 20px;
+background:#f5f5f5;
+min-height:100vh;
+}
+
+.order-box{
+max-width:750px;
+margin:auto;
+background:#fff;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.order-box h1{
+text-align:center;
+margin-bottom:30px;
+color:#c89b3c;
+}
+
+.order-box label{
+display:block;
+margin-top:20px;
+margin-bottom:8px;
+font-weight:bold;
+}
+
+.order-box input,
+.order-box select,
+.order-box textarea{
+width:100%;
+padding:14px;
+border:1px solid #ddd;
+border-radius:10px;
+font-family:Cairo;
+font-size:16px;
+}
+
+.order-box input:focus,
+.order-box select:focus,
+.order-box textarea:focus{
+outline:none;
+border-color:#c89b3c;
+}
+
+.order-box small{
+display:block;
+margin-top:8px;
+color:#777;
+}
+
+.order-box button{
+width:100%;
+margin-top:30px;
+padding:16px;
+border:none;
+border-radius:12px;
+background:#c89b3c;
+color:#fff;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.order-box button:hover{
+background:#111;
+}
+
+#vodafoneBox,
+#sizes{
+margin-top:20px;
+padding:15px;
+background:#fafafa;
+border:1px solid #eee;
+border-radius:12px;
+}
+
+@media(max-width:768px){
+
+.order-box{
+padding:25px;
+}
+
+.order-box h1{
+font-size:28px;
+}
+
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:700;
+    color:#222;
+    font-size:16px;
+}
+
+.input-group input{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    font-family:'Cairo', sans-serif;
+    transition:.3s;
+}
+
+.input-group input:focus{
+    outline:none;
+    border-color:#d4af37;
+    box-shadow:0 0 8px rgba(212,175,55,.3);
+}
+
+/* تغيير لون عناوين الحقول */
+label{
+    color:#000 !important;
+    font-weight:700;
+}
+
+/* تغيير لون النص داخل القوائم */
+select{
+    color:#000;
+}
+
+/* تغيير لون النص داخل الخانات */
+input,
+textarea{
+    color:#000;
+}

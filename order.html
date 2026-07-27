@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>إتمام الطلب | Al-Esawy Design</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="order.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+<h2>Al-Esawy <span>Design</span></h2>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="order-section">
+
+<div class="order-box">
+
+<h1>إتمام الطلب</h1>
+
+<form id="orderForm">
+
+<label>الاسم بالكامل</label>
+
+<input type="text" id="name" required>
+
+<label>رقم الهاتف</label>
+
+<input type="tel" id="phone" required>
+
+<label>اختر المنتج</label>
+
+<select id="product" required>
+
+<option value="">اختر المنتج</option>
+
+<option value="مج أبيض">مج أبيض - 90 جنيه</option>
+
+<option value="مج سحري">مج سحري - 120 جنيه</option>
+
+<option value="ميدالية">ميدالية - 20 جنيه</option>
+
+<option value="تابلوه">تابلوه</option>
+
+<option value="درع">درع</option>
+
+</select>
+
+<div id="sizes" style="display:none;">
+
+<label>مقاس التابلوه</label>
+
+<select id="tableSize">
+
+<option>10×15</option>
+
+<option>15×21</option>
+
+<option selected>20×30 - 80 جنيه</option>
+
+<option>30×40</option>
+
+<option>40×50</option>
+
+<option>50×60</option>
+
+<option>50×70</option>
+
+</select>
+
+</div>
+
+<label>رفع الصور</label>
+
+<input type="file" id="images" multiple accept="image/*">
+
+<small>
+للمجات: يسمح برفع من صورة إلى 3 صور فقط.
+</small>
+
+<label>طريقة الدفع</label>
+
+<select id="payment">
+
+<option>الدفع عند الاستلام</option>
+
+<option>فودافون كاش</option>
+
+</select>
+
+<div id="vodafoneBox" style="display:none;">
+
+<label>ارفع صورة إيصال التحويل</label>
+
+<input type="file" id="receipt" accept="image/*">
+
+<label>آخر 4 أرقام من رقم التحويل</label>
+
+<input type="text" maxlength="4">
+
+</div>
+
+<label>ملاحظات</label>
+
+<textarea rows="5"></textarea>
+
+<button type="submit">
+
+إرسال الطلب
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script src="order.js"></script>
+
+</body>
+
+</html>
