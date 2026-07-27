@@ -528,3 +528,62 @@ background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
 background:#000;
 border:2px solid #fff;
 }
+
+/* تعديل عرض الموقع على الموبايل */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr !important;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .order-box {
+        width: 95%;
+        margin: auto;
+    }
+
+}
